@@ -29,7 +29,7 @@
                 <h1>Venha participar do meu Aniversário</h1>
                 <div class="hero__content">
                     <p>
-                        Venha comemorar o Aniversário do Miguel, com muita alegria, brincadeiras e diversão.
+                        Venha comemorar o Aniversário do <b>Miguel</b>, com muita alegria, brincadeiras e diversão.
                     </p>
                     <p><b>Data:</b> 20 de Setembro às 18 hs</p>
                     <div class="hero__button">
@@ -63,25 +63,7 @@
       
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./src/scripts/main.js"></script>
-    <script>
-  const audio = document.getElementById("bg-music");
-
-  // Tenta tocar automaticamente
-  window.addEventListener("load", () => {
-    audio.muted = false;
-    audio.play().catch(() => {
-      console.log("Autoplay bloqueado. Esperando interação do usuário...");
-    });
-  });
-
-  // Se bloqueado, libera no primeiro clique
-  document.addEventListener("click", () => {
-    if (audio.paused) {
-      audio.muted = false;
-      audio.play();
-    }
-  }, { once: true });
-</script>
+    
     
   
 </body>
